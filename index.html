@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CV</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/icons8-установить-как-резюме-80 (2).png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/icons8-установить-как-резюме-80 (2).png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/icons8-установить-как-резюме-80 (2).png">
+    <link rel="manifest" href="./favicon/icons8-установить-как-резюме-80 (2).png">
+    <link rel="mask-icon" href="./favicon/icons8-установить-как-резюме-80 (2).png" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Имя, фото, котакты и социальные сети-->
+    <div class="container">
+        <img src="./photo1.jpg" alt="тут моя фотка" class="avatar" />
+        <div class="contacts">
+            <h1 class="My_name">Алексей Гусев</h1>
+            <h2>Контакты</h2>
+
+            <p class="telephone">
+                Мобильный телефон: +7 (705) 861 02 84
+            </p>
+            <p class="telephone">
+                Электронная почта: gustavaleksej9@gmail.com
+            </p>
+
+            <div class="social_seti">
+                <h2>Социальные сети</h2>
+                <a href="https://vk.com/alexgustav" target="_blank">ВКонтакте</a>
+                |
+                <a href="https://web.telegram.org/?legacy=1#/im" target="_blank">Тelegram</a>
+            </div>
+        </div>
+    </div>
+    <!--Блок: высшее образование-->
+    <div class="ingenering_university">
+        <div class="university">
+            <p><strong>Высшее образование:</strong></p>
+        </div>
+        <div class="student">
+            <p> Инженер механик: "Технология машиностроения" </p>
+        </div>
+    </div>
+    <!--Обучение-->
+    <div class="education">
+        <h2>Обучение:</h2>
+    </div>
+    <ul class="Java">
+        <li class="html">
+            Курс HTML (Hyper Text Markup Language)
+        </li>
+        <li class="css">
+            Курс CSS (Cascading Style Sheets)
+        </li>
+        <li class="js">
+            Курс JS (JavaScript)
+        </li>
+    </ul>
+    <!-- Опыт работы-->
+
+
+    <div class="card bg-red">
+        <h2>Опыт работы:</h2>
+        <table class="table">
+            <tr>
+                <th>Организация</th>
+                <th>Должность</th>
+                <th>Период работы</th>
+            </tr>
+            <tr>
+                <td>МЧС (Министерство по чрезвычайным ситуациям)</td>
+                <td class="fire_man">Пожарный спасатель</td>
+                <td class="simple">2014 - 2022 г.</td>
+            </tr>
+            <tr>
+                <td>Ювелирное производство (Ювелир)</td>
+                <td> Изготовление и ремонт ювелирных украшений</td>
+                <td class="simple">2012 - 2019 г.</td>
+            </tr>
+        </table>
+    </div>
+    <!--О себе-->
+    <div class="card bg-green">
+        <h2>О себе:</h2>
+        <p>Дисциплинированный, стрессоустойчивый, привык к экстримальным и непредсказуемым ситуациям.</p>
+        <p>Мало того, что профессия "Веб-разработчик" мне очень интересна, но также она разделяет мои жизненные ценности:
+            постоянное обучение и развитие, созидание для общества, свобода и гибкость.</p>
+        <p>Цель: стать профессиональным Веб-разработчиком.</p>
+    </div>
+    <!--Связаться со мной-->
+    <div class="contact">
+        <h2>Связаться со мной:</h2>
+        <form action="">
+
+            <div class="for-group">
+                <Label for="name">Ваше имя:</Label>
+                <input type="text" id="name" placeholder="Введите имя">
+            </div>
+            <div class="for-group">
+                <Label for="email">Ваш email:</Label>
+                <input type="email" id="email" placeholder="Введите email">
+            </div>
+            <div class="for-group">
+                <Label for="submit">Ваше сообщение:</Label>
+                <textarea id="text" rows="4" cols="71"></textarea>
+            </div>
+            <input class="btn" type="submit" value="Связаться">
+        </form>
+    </div>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+</body>
+
+</html>

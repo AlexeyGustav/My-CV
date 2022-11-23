@@ -1,0 +1,181 @@
+body {
+    background-color: #d3d198;
+    color: #0f141e;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Kalam', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    letter-spacing: 1px;
+}
+
+/* Имя, фото, котакты и социальные сети */
+.container {
+
+display: flex;
+flex-wrap: wrap-reverse;
+justify-content:space-evenly;
+}
+
+.My_name {
+    font-family: 'Vollkorn SC', serif;
+    margin-left: 30px;
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+}
+.contacts {
+    flex-direction: column;
+   
+}
+.telephone {
+    color: rgb(80, 73, 63);
+}
+.social_seti {
+    margin-top: 40px;
+}
+
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:active {
+    color: green;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.avatar {
+    width: 20%;
+    height: 20%;
+    border-radius: 100px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 025);
+}
+/*Блок: высшее образование*/
+.ingenering_university {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #c2bf64;
+    margin-top: 40px;
+}
+.university {
+    width: 35%;
+    padding: none;
+    font-size: 1em;
+   letter-spacing: 2px;
+   margin-left: 10px;
+}
+.student {
+    width: 65%;
+    text-align: end;
+    background-color: #c4c17f;
+    padding-right: 20px;
+}
+/* Обучение */
+
+.Java {
+    list-style: none;
+    padding: 0;
+}
+.html {
+    margin-bottom: 5px;
+}
+.html::before {
+content: url(./favicon/html.png);
+position: relative;
+top: 5px;
+}
+.css::before {
+    content: url(./favicon/css.png);
+    top: 7px;
+    position: relative;
+    
+}
+.js {
+   margin-top: 5px;
+}
+.js::before {
+    content: url(./favicon/javascript1.png);
+    top: 5px;
+    position: relative;
+}
+.education {
+    height: 100%;
+    margin-top: 5px;
+padding-left: 10px;
+    background-color: #c2bf64;
+   
+}
+/* Опыт работы */
+.fire_man {
+    text-align: center;
+}
+.card h2{
+    margin-bottom: 20px;
+}
+.table td {
+    padding-bottom: 20px;
+}
+.table th {
+    padding-bottom: 20px;
+}
+.simple {
+    text-align: end;
+}
+
+.card h2{
+    background-color: #c2bf64;
+    height: 100%;
+    padding-left: 10px;
+}
+/* связаться со мной */
+.contact h2{
+    background-color: #c2bf64;
+    padding-left: 10px;
+}
+
+
+
+.for-group label {
+    display: block;
+    font-size: 19px;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.for-group input {
+    width: 50%;
+    box-sizing: border-box;
+    border: none;
+    /*background: transparent;*/
+    border-bottom: 1px solid rgb(37, 33, 33);
+    color: rgb(12, 10, 10);
+    padding: 10px 0 10px;
+    outline: none;
+}
+
+.btn {
+    background-color: #000;
+    color: rgb(236, 227, 227);
+    padding: 15px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
