@@ -77,7 +77,10 @@
     }
     .card bg-green {
         font-size: 17px;
-
+        
+    }
+    .card p {
+        text-align: justify;
     }
     .contact {
         font-size: 17px;
