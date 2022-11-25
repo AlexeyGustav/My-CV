@@ -115,21 +115,25 @@ top: 5px;
     background-color: #c2bf64;
 }
 /* Опыт работы */
+.table {
+    width: 100%;
+}
 .fire_man {
-    text-align: center;
+    text-align: justify;
 }
 .card h2{
     margin-bottom: 20px;
 }
 .table td {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .table th {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 .simple {
     text-align: end;
-}
+} 
 
 .card h2{
     background-color: #c2bf64;
