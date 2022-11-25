@@ -18,6 +18,7 @@ h2 {
 display: flex;
 flex-wrap: wrap-reverse;
 justify-content:space-evenly;
+
 }
 
 .My_name {
@@ -112,7 +113,6 @@ top: 5px;
     margin-top: 5px;
     padding-left: 10px;
     background-color: #c2bf64;
-   
 }
 /* Опыт работы */
 .fire_man {
