@@ -99,25 +99,36 @@
     <!--Связаться со мной-->
     <div class="contact">
         <h2>Связаться со мной:</h2>
-        <form action="">
+        <form class="form" id="form" name="form">
 
             <div class="for-group">
                 <Label for="name">Ваше имя:</Label>
-                <input type="text" id="name" placeholder="Введите имя">
+                <input type="text" class="form-field" name="name" placeholder="Введите имя">
             </div>
             <div class="for-group">
                 <Label for="email">Ваш email:</Label>
-                <input type="email" id="email" placeholder="Введите email">
+                <input type="email" class="form-field" name="email" placeholder="Введите email">
             </div>
             <div class="for-group">
                 <Label for="submit">Ваше сообщение:</Label>
-                <textarea id="text" rows="4" cols="71"></textarea>
+                <textarea class="form-field" rows="4" cols="71"></textarea>
             </div>
-            <input class="btn" type="submit" value="Связаться">
+            <input class="form-button" type="submit" value="Связаться">
         </form>
     </div>
 
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+    <div class="overlay js-overlay-thank-you">
+        <div class="popup js-thank-you">
+            <h2>Спасибо за заявку</h2>
+            <div class="close-popup js-close-thank-you"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+   
 
 
 </body>

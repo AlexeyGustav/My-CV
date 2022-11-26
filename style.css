@@ -168,7 +168,7 @@ top: 5px;
     outline: none;
 }
 
-.btn {
+.form-button {
     background-color: #000;
     color: rgb(236, 227, 227);
     padding: 15px 20px;
@@ -178,6 +178,6 @@ top: 5px;
     cursor: pointer;
 }
 
-.btn:hover {
+.form-button:hover {
     opacity: 0.9;
 }
