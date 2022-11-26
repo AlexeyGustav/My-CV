@@ -99,32 +99,26 @@
     <!--Связаться со мной-->
     <div class="contact">
         <h2>Связаться со мной:</h2>
-        <form class="form" id="form" name="form">
-
-            <div class="for-group">
-                <Label for="name">Ваше имя:</Label>
-                <input type="text" class="form-field" name="name" placeholder="Введите имя">
-            </div>
-            <div class="for-group">
-                <Label for="email">Ваш email:</Label>
-                <input type="email" class="form-field" name="email" placeholder="Введите email">
-            </div>
-            <div class="for-group">
-                <Label for="submit">Ваше сообщение:</Label>
-                <textarea class="form-field" rows="4" cols="71"></textarea>
-            </div>
-            <input class="form-button" type="submit" value="Связаться">
-        </form>
     </div>
 
+    <form class="form" id="form" name="form">
+		<input type="text" class="form-field" name="name" placeholder="Введите ваше имя">
+		<input type="text" class="form-field" name="phone" placeholder="Введите ваш телефон">
+		<button class="form-button"><span class="text-button">Отправить заявку</span></button>
+	</form>
 
-
+	<footer>
+		<div class="overlay js-overlay-thank-you">
+			<div class="popup js-thank-you">
+				<h2>Спасибо за заявку</h2>
+				<div class="close-popup js-close-thank-you"></div>
+			</div>
+		</div>
+	</footer>
     
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="plugins/jquery-maskedinput/jquery.maskedinput.js"></script>
     <script src="./main.js"></script>
-   
-
 
 </body>
 
