@@ -10,7 +10,7 @@ $(document).ready(function() {
 			url: "master/mail.php",
 			data: $(this).serialize()
 		}).done(function() {
-			$('.js-overlay-thank-you').fadeIn();
+			
 			$(this).find('input').val('');
 			$('#form').trigger('reset');
 		});
