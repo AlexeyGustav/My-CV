@@ -147,27 +147,6 @@ top: 5px;
 }
 
 
-
-.for-group label {
-    display: block;
-    font-size: 19px;
-    color: black;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-
-.for-group input {
-    width: 50%;
-    box-sizing: border-box;
-    border: none;
-    /*background: transparent;*/
-    border-bottom: 1px solid rgb(37, 33, 33);
-    color: rgb(12, 10, 10);
-    padding: 10px 0 10px;
-    outline: none;
-}
-
 .form-button {
     background-color: #000;
     color: rgb(236, 227, 227);
@@ -181,10 +160,6 @@ top: 5px;
 .form-button:hover {
     opacity: 0.9;
 }
-
-
-
-
 
 .overlay {
 	position: absolute;
