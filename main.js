@@ -7,7 +7,7 @@ $(document).ready(function() {
 		}
 		$.ajax({
 			type: "POST",
-			url: "master/mail.php",
+			url: "mail/mail.php",
 			data: $(this).serialize()
 		}).done(function() {
 			$('.js-overlay-thank-you').fadeIn();
