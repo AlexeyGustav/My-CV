@@ -7,7 +7,7 @@ $(document).ready(function() {
 		}
 		$.ajax({
 			type: "POST",
-			url: "mail/mail.php",
+			url: "https://github.com/AlexeyGustav/My-CV/blob/master/mail.php",
 			data: $(this).serialize()
 		}).done(function() {
 			$('.js-overlay-thank-you').fadeIn();
