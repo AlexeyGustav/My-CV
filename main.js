@@ -1,21 +1,35 @@
-$(document).ready(function() {
+$("#sendMail").on("click", function() {
+var email = $("#email").val();
+var name = $("#name").val();
+var message = $("message").val();
 
-	//E-mail Ajax Send
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
+if(email == "") {
+	$("#errorMess").text("Введите email");
+	return false;
+} else if(name == "") {
+	$("#errorMess").text("Введите имя");
+	return false;
+} else if(message == "") {
+	$("#errorMess").text("Введите сообщение");
+	return false;
+} 
+
+$("#errorMess").text("");
+
+$.ajax({
+	url: '/mail.php',
+	type: 'POST',
+	cache: false,
+	data: { 'name': name, 'email': email, 'message': message },
+	dataType: 'html', 
+	beforeSend: function() {
+		$("$sendMail").prop("disabled", true);
+	},
+	success: function(data) {
+		alert(data);
+		$("#sendMail").prop("disabled", false);
+	}
+})
 
 });
 

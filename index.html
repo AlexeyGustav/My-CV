@@ -104,22 +104,25 @@
     <div class="contact">
         <h2>Связаться со мной:</h2>
     </div>
-
-    <form class="form" id="form" name="form">
-		
-
-            <!-- Hidden Required Fields -->
-            <input type="hidden" name="project_name" value="CV">
-            <input type="hidden" name="admin_email" value="gustavaleksej9egmail.com">
-            <input type="hidden" name="form_subject" value="Заявка с резюме">
-            <!-- END Hidden Required Fields -->
+        <div class="contact">
+            <form>
     
-            <input type="text" name="Name" placeholder="You name..." required><br>
-            <input type="text" name="E-mail" placeholder="You E-mail..." required><br>
-            <input type="text" name="Phone" placeholder="You phone..."><br>
-            <button type="submit">Send</button>
-    
-        </form>
+                <div class="for-group">
+                    <Label for="name">Ваше имя:</Label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+                <div class="for-group">
+                    <Label for="email">Ваш email:</Label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+                <div class="for-group">
+                    <Label>Ваше сообщение:</Label>
+                    <textarea type="message" id="message" rows="4" cols="71" placeholder="Ваше сообщение"></textarea>
+                </div>
+                <button class="btn" type="button" id="sendMail" name="button">Связаться</button>
+            </form>
+            <div id="errorMess"></div>
+        </div>
         
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
