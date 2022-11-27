@@ -106,24 +106,26 @@
     </div>
 
     <form class="form" id="form" name="form">
-		<input type="text" class="form-field" name="name" placeholder="Введите ваше имя">
-		<input type="text" class="form-field" name="phone" placeholder="Введите ваш телефон">
-		<button class="form-button"><span class="text-button">Отправить заявку</span></button>
-	</form>
+		
 
-	<footer>
-		<div class="overlay js-overlay-thank-you">
-			<div class="popup js-thank-you">
-				<h2>Спасибо за заявку</h2>
-				<div class="close-popup js-close-thank-you"></div>
-			</div>
-		</div>
-	</footer>
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="CV">
+            <input type="hidden" name="admin_email" value="gustavaleksej9@gmail.com">
+            <input type="hidden" name="form_subject" value="Заявка с резюме">
+            <!-- END Hidden Required Fields -->
     
-   
-	<script src="plugins/jquery-maskedinput/jquery.maskedinput.js"></script>
+            <input type="text" name="Name" placeholder="You name..." required><br>
+            <input type="text" name="E-mail" placeholder="You E-mail..." required><br>
+            <input type="text" name="Phone" placeholder="You phone..."><br>
+            <button>Send</button>
+    
+        </form>
+    
+
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="./main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
 </body>
 
 </html>
