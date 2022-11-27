@@ -17,7 +17,7 @@ if(email == "") {
 $("#errorMess").text("");
 
 $.ajax({
-	url: '/mail.php',
+	url: 'mail.php',
 	type: 'POST',
 	cache: false,
 	data: { 'name': name, 'email': email, 'message': message },
