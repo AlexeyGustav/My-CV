@@ -3,11 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content=" ">
-	<meta name="keywords" content=" ">
     <title>CV</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/icons8-установить-как-резюме-80 (2).png">
@@ -19,7 +14,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <link href="style.css" rel="stylesheet">
-    <link href="@media.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -56,78 +51,79 @@
     </div>
     <!--Обучение-->
     <div class="education">
-        <h2>Обучение:</h2>
+        <h2>Знания:</h2>
     </div>
     <ul class="Java">
-        <li class="html">
-            Курс HTML (Hyper Text Markup Language)
+        <li class="Java Java__html">
+            HTML (Hyper Text Markup Language)
         </li>
-        <li class="css">
-            Курс CSS (Cascading Style Sheets)
+        <li class="Java Java__css">
+            CSS (Cascading Style Sheets)
         </li>
-        <li class="js">
-            Курс JS (JavaScript)
+        <li class="Java Java__js">
+            JS (JavaScript)
         </li>
+        <li class="Java Java__GitHub">
+            Git (Cистема контроля версий) 
+        </li>
+        <li class="Java Java__SASS">
+            SASS (Препроцессор CSS)
+        </li>
+        <li class="Java Java__bem">
+            Методология / БЭМ (Компонентный подход к веб-разработке "Блок Элемент Модификатор")
+        </li>
+        
     </ul>
     <!-- Опыт работы-->
 
 
     <div class="card bg-red">
         <h2>Опыт работы:</h2>
-        <table class="table">
-            <tr>
-                <th>Организация</th>
-                <th>Должность</th>
-                <th>Период работы</th>
-            </tr>
-            <tr>
-                <td>МЧС (Министерство по чрезвычайным ситуациям)</td>
-                <td class="fire_man">Пожарный спасатель</td>
-                <td class="simple">2014 г. 2022 г.</td>
-            </tr>
-            <tr>
-                <td>Ювелирное производство (Ювелир)</td>
-                <td> Изготовление и ремонт ювелирных украшений</td>
-                <td class="simple">2012 г. 2019 г.</td>
-            </tr>
-        </table>
+        
+        <ul>
+            <li>Разрабатывал веб-сайты с использованием HTML, CSS, SASS по методологии БЭМ.</li>
+            <li>Реализовывал адаптивные дизайны и обеспечвал совместимость с различными устройствами.</li>
+            <li>Адаптировал картинки разного веса, для увеличения загрузки на разных типах устройств</li>
+            <li>Создавал компоненты анимации кнопок, карточек и заголовков</li>
+        </ul>
+        <div class="siteBaloons">
+            <a href="https://alexeygustav.github.io/Balloons/"  target="_blank">Сайт: "Воздушные шары"</a>
+        </div>
+        
     </div>
     <!--О себе-->
     <div class="card bg-green">
         <h2>О себе:</h2>
-        <p>Дисциплинированный, стрессоустойчивый, привык к экстримальным и непредсказуемым ситуациям.</p>
-        <p>Мало того, что профессия "Frontend developer" мне очень интересна, но также она разделяет мои жизненные ценности:
-            постоянное обучение и развитие, созидание для общества, работа в команде.</p>
-        <p>Цель: стать Full Stack Developer.</p>
+        <p>Дисциплинированный, целеустремлённый, жажда к непрерывному обучению и развитию.</p>
+        <p>Профессия "Frontend-разработчик" мне очень интересна, а также она разделяет мои жизненные ценности:
+            постоянное обучение и развитие, созидание для общества, свобода и гибкость.</p>
+        <p>Цель: стать Full stack разработчиком.</p>
     </div>
+    
     <!-- Связаться со мной
     <div class="contact">
         <h2>Связаться со мной:</h2>
+        <form action="">
+
+            <div class="for-group">
+                <Label for="name">Ваше имя:</Label>
+                <input type="text" id="name" placeholder="Введите имя">
+            </div>
+            <div class="for-group">
+                <Label for="email">Ваш email:</Label>
+                <input type="email" id="email" placeholder="Введите email">
+            </div>
+            <div class="for-group">
+                <Label for="submit">Ваше сообщение:</Label>
+                <textarea id="text" rows="4" cols="71"></textarea>
+            </div>
+            <input class="btn" type="submit" value="Связаться">
+        </form>
     </div>
-        <div class="contact">
-            <form>
-    
-                <div class="for-group">
-                    <Label for="name">Ваше имя:</Label>
-                    <input type="text" id="name" placeholder="Введите имя">
-                </div>
-                <div class="for-group">
-                    <Label for="email">Ваш email:</Label>
-                    <input type="email" id="email" placeholder="Введите email">
-                </div>
-                <div class="for-group">
-                    <Label>Ваше сообщение:</Label>
-                    <textarea type="message" id="message" rows="4" cols="71" placeholder="Ваше сообщение"></textarea>
-                </div>
-                <button class="btn" type="button" id="sendMail" name="button">Связаться</button>
-            </form>
-            <div id="errorMess"></div>
-        </div>
-        
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
-    
-    <script src="./main.js"></script>
-    
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+
+
 </body>
 
 </html>

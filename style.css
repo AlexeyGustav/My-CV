@@ -3,13 +3,18 @@ body {
     color: #0f141e;
     margin-left: 10%;
     margin-right: 10%;
-    font-size: 16px;
-    font-family: 'Syne', sans-serif;
+    font-size: 1.6rem;
+    font-weight: normal;
+    font-family: 'Kalam', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+html {
+    font-size: 62.5%;
 }
 
 h2 {
     font-family: 'Lora', serif;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
 }
 
 /* Имя, фото, котакты и социальные сети */
@@ -18,15 +23,14 @@ h2 {
 display: flex;
 flex-wrap: wrap-reverse;
 justify-content:space-evenly;
-
 }
 
 .My_name {
     font-family: 'Vollkorn SC', serif;
-    margin-left: 30px;
-    font-size: 40px;
-    letter-spacing: 5px;
-    margin-bottom: 40px;
+    margin-left: 3rem;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 4rem;
 }
 .contacts {
     flex-direction: column;
@@ -36,7 +40,7 @@ justify-content:space-evenly;
     color: rgb(80, 73, 63);
 }
 .social_seti {
-    margin-top: 40px;
+    margin-top: 4rem;
 }
 
 
@@ -56,8 +60,8 @@ a:hover {
 .avatar {
     width: 20%;
     height: 20%;
-    border-radius: 100px;
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 025);
+    border-radius: 10rem;
+    box-shadow: 0.4rem 0.4rem 1.4rem rgba(0, 0, 0, 025);
 }
 /*Блок: высшее образование*/
 .ingenering_university {
@@ -65,93 +69,102 @@ a:hover {
     flex-direction: row;
     justify-content: space-between;
     background-color: #c2bf64;
-    margin-top: 40px;
+    margin-top: 3rem;
 }
 .university {
     width: 35%;
     padding: none;
     font-size: 1em;
-   letter-spacing: 2px;
-   margin-left: 10px;
+    letter-spacing: 0.3rem;
+    margin-left: 1rem;
 }
 .student {
     width: 65%;
     text-align: end;
     background-color: #c4c17f;
-    padding-right: 20px;
+    padding-right: 2rem;
 }
 /* Обучение */
 
 .Java {
     list-style: none;
     padding: 0;
-}
-.html {
     margin-bottom: 5px;
 }
-.html::before {
+.Java__html {
+    margin-bottom: 0.5rem;
+}
+.Java__html::before {
 content: url(./favicon/html.png);
 position: relative;
-top: 5px;
+top: 0.5rem;
 }
-.css::before {
+.Java__css::before {
     content: url(./favicon/css.png);
-    top: 7px;
+    top: 0.7rem;
     position: relative;
     
 }
-.js {
-   margin-top: 5px;
+.Java__js {
+   margin-top: 0.5rem;
 }
-.js::before {
+.Java__js::before {
     content: url(./favicon/javascript1.png);
-    top: 5px;
+    top: 0.5rem;
     position: relative;
 }
+.Java__GitHub::before {
+    content: url(./favicon/git.png);
+    top: 0.5rem;
+    position: relative;
+}
+.Java__SASS::before {
+    content: url(./favicon/sass.png);
+    top: 0.5rem;
+    position: relative;
+}
+.Java__bem {
+    padding-top: 0.8rem;
+}
+
 .education {
     height: 100%;
-    margin-top: 5px;
-    padding-left: 10px;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
     background-color: #c2bf64;
+   
 }
 /* Опыт работы */
-.table {
-    width: 100%;
-}
-.fire_man {
-    text-align: justify;
-}
+
 .card h2{
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
-.table td {
-    padding-bottom: 10px;
-}
-.table th {
-    padding-bottom: 10px;
-    text-align: center;
-}
-.simple {
-    text-align: end;
-} 
 
 .card h2{
     background-color: #c2bf64;
     height: 100%;
     padding-left: 10px;
+}
+li {
+    margin-bottom: 1rem;
+}
+.siteBaloons {
+    text-align: center;
 }
 /* связаться со мной */
 .contact h2{
     background-color: #c2bf64;
-    padding-left: 10px;
+    padding-left: 1rem;
 }
+
+
 
 .for-group label {
     display: block;
-    font-size: 19px;
+    font-size: 1.9rem;
     color: black;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 
@@ -162,17 +175,17 @@ top: 5px;
     /*background: transparent;*/
     border-bottom: 1px solid rgb(37, 33, 33);
     color: rgb(12, 10, 10);
-    padding: 10px 0 10px;
+    padding: 1rem 0 1rem;
     outline: none;
 }
 
 .btn {
     background-color: #000;
     color: rgb(236, 227, 227);
-    padding: 15px 20px;
-    margin-top: 20px;
+    padding: 1.5rem 2rem;
+    margin-top: 2rem;
     border: none;
-    border-radius: 15px;
+    border-radius: 1.5rem;
     cursor: pointer;
 }
 
