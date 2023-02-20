@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CV</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/icons8-установить-как-резюме-80 (2).png">
@@ -19,42 +20,54 @@
 
 <body>
     <!--Имя, фото, котакты и социальные сети-->
-    <div class="container">
-        <img src="./photo1.jpg" alt="тут моя фотка" class="avatar" />
-        <div class="contacts">
-            <h1 class="My_name">Алексей Гусев</h1>
-            <h2>Контакты</h2>
+    <main>
+        <div class="container">
+            <div class="container__photo">
+                <img src="./photo1.jpg" alt="тут моя фотка" class="container__photo__img" />
+            </div>
+            
+            <div class="container__contacts">
+                <div class="container__contacts_order">
+                    <h1 class="container__contacts__name">Алексей Гусев</h1>
+                </div>
+                
+                <h2>Контакты</h2>
 
-            <p class="telephone">
-                Мобильный телефон: +7 (705) 861 02 84
-            </p>
-            <p class="telephone">
-                Электронная почта: gustavaleksej9@gmail.com
-            </p>
+                <p class="container__contacts__telephone">
+                    Мобильный телефон: +7 (705) 861 02 84
+                </p>
+                <p class="container__contacts__telephone">
+                    Электронная почта: gustavaleksej9@gmail.com
+                </p>
 
-            <div class="social_seti">
-                <h2>Социальные сети</h2>
-                <a href="https://vk.com/alexgustav" target="_blank">ВКонтакте</a>
-                |
-                <a href="https://web.telegram.org/?legacy=1#/im" target="_blank">Тelegram</a>
+                <div class="container__contacts__seti">
+                    <h2>Социальная сеть и Messengers</h2>
+                    <a href="https://vk.com/alexgustav" target="_blank">ВКонтакте</a>
+                    |
+                    <a href="https://web.telegram.org/?legacy=1#/im" target="_blank">Тelegram</a>
+                    |
+                    <a href="https://api.whatsapp.com/send?phone=79787720175&text=Hello%20World!%20My%20name%20is%20Alex!Welcome%20to%20my%20messenger!" target="_blank">Whatsapp</a>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
     <!--Блок: высшее образование-->
-    <div class="ingenering_university">
-        <div class="university">
-            <h2><strong>Высшее образование:</strong></h2>
+    <article>
+        <div class="ingenering_university">
+            <div class="university">
+                <h2><strong>Высшее образование:</strong></h2>
+            </div>
+            <div class="student">
+                <p> Инженер механик: "Технология машиностроения" </p>
+            </div>
         </div>
-        <div class="student">
-            <p> Инженер механик: "Технология машиностроения" </p>
-        </div>
-    </div>
+    </article>
     <section>
         <h2 class="education">
-            Мои проекты
+            Мои проекты:
         </h2>
         <div class="pet-progect">
-            <ul>
+            <ul class="ul">
                 <li class="siteBaloons">
                     <a href="https://alexeygustav.github.io/Balloons/"  target="_blank">Сайт: "Воздушные шары"</a>
                 </li>
@@ -110,7 +123,7 @@
         <p>Дисциплинированный, целеустремлённый, жажда к непрерывному обучению и развитию.</p>
         <p>Профессия "Frontend-разработчик" мне очень интересна, а также она разделяет мои жизненные ценности:
             постоянное обучение и развитие, созидание для общества, свобода и гибкость.</p>
-        <p>Цель: стать Full stack разработчиком.</p>
+    
     </div>
     
     <!-- Связаться со мной
