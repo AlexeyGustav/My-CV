@@ -17,6 +17,18 @@ html {
 h2 {
   font-family: "Lora", serif;
   letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  margin-bottom: 1rem;
 }
 
 /* Имя, фото, котакты и социальные сети */
@@ -83,6 +95,7 @@ h2 {
 }
 .container__contacts__telephone {
   color: rgb(80, 73, 63);
+  margin-bottom: 1rem;
 }
 
 a {
@@ -111,6 +124,8 @@ a:hover {
   justify-content: space-between;
   background-color: #c2bf64;
   margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.9rem;
 }
 
 .university {
@@ -132,6 +147,7 @@ a:hover {
 
 .student {
   width: 65%;
+  height: 100%;
   text-align: end;
   background-color: #c4c17f;
   padding-right: 2rem;
@@ -143,6 +159,25 @@ a:hover {
     text-align: center;
     padding-right: none;
     margin-left: 2rem;
+  }
+}
+
+.education {
+  height: 100%;
+  padding-left: 1rem;
+  background-color: #c2bf64;
+}
+
+.siteBaloons {
+  text-align: center;
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+@media (max-width: 600px) {
+  .siteBaloons {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
   }
 }
 
@@ -195,16 +230,11 @@ a:hover {
   padding-top: 0.8rem;
 }
 
-.education {
+.education_my {
   height: 100%;
   margin-top: 0.5rem;
   padding-left: 1rem;
   background-color: #c2bf64;
-}
-@media (max-width: 600px) {
-  .education {
-    font-size: 1.9rem;
-  }
 }
 
 /* Опыт работы */
@@ -222,18 +252,8 @@ li {
   margin-bottom: 1rem;
 }
 
-.siteBaloons {
-  text-align: center;
+.card ul {
   list-style-type: none;
-  margin-bottom: 2rem;
-}
-@media (max-width: 600px) {
-  .siteBaloons {
-    margin-bottom: 1rem;
-    width: 100%;
-    text-align: left;
-    list-style-type: circle;
-  }
 }
 
 /* связаться со мной */
